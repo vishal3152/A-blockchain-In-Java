@@ -39,7 +39,7 @@ final class Block implements Serializable {
     /**
      * @param difficulty
      */
-    public void mineBlock(Integer difficulty) {
+    protected void mineBlock(Integer difficulty) {
         System.out.println("--------------------------- Block is being mined ------------------------------------------");
 
         String difficultyString = String.join("", Collections.nCopies(difficulty, "0"));

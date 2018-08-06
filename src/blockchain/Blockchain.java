@@ -17,7 +17,7 @@ public final class Blockchain {
         // initiliaze genesis block
         this.chain = new LinkedList<>();
         this.difficulty = difficulty;
-        this.chain.add(new Block(0, "0"
+        this.chain.add(new Block(0, "Genesis block"
                 , new TransactionData.Builder()
                 .setTransactionType(TransactionType.CREDIT)
                 .setTransactionValue(0.0)
